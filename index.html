@@ -6,6 +6,11 @@
 	<body>
 		<a-scene>
 			<a-assets>
+			    <!-- Kinda what it'll end up looking like once back end is added: 
+        		{% if categories %} 
+        		{% for clothing in clothes %}
+        		<img id="{{ clothes.name }}" src="{{ clothes.name }}.png">
+        		{% endfor %}-->
 				<img id="boxTexture1" src="blazer.png">
 				<img id="boxTexture2" src="dress.png">
 				<img id="boxTexture3" src="boots.png">
@@ -16,6 +21,12 @@
                 <img id="background" src="shoeCloset.jpg">
                 <img id="carpet" src="carpet.jpg">
 			</a-assets>
+			<!--
+    		{% if categories %} 
+        	{% for clothing in clothes %}
+       		 <a-box  position="x 0 -100" width= y height= x src="#{{}}"></a-image>
+       		 {% endfor %}
+   			 {% endif %}-->
 			<!-- Objects are boxes until i can find/make better models and utilize them-->
 			<!--Blazer-->
 			<a-box src="#boxTexture1" position="0 1 -5" rotation="0 0 0" scale = "2 2 2">
